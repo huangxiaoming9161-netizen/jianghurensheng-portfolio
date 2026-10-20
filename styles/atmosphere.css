@@ -1,0 +1,25 @@
+/* One quiet backdrop across the site. The opaque snow cover hides it. */
+body{isolation:isolate;min-height:100vh}
+body::before{
+ content:"";
+ position:fixed;
+ z-index:-1;
+ pointer-events:none;
+ right:-120px;
+ bottom:-420px;
+ width:min(1640px,100vw);
+ aspect-ratio:1448/1086;
+ background:url('../media/atmosphere/mountains.png') center/contain no-repeat;
+ opacity:var(--mountain-opacity);
+ filter:blur(.65px);
+ --mountain-fade-x:linear-gradient(90deg,transparent,rgba(0,0,0,.6) 12%,#000 24%,#000 76%,rgba(0,0,0,.6) 88%,transparent);
+ --mountain-fade-y:linear-gradient(180deg,transparent,#000 30%,#000 76%,transparent 98%);
+ -webkit-mask-image:var(--mountain-fade-x),var(--mountain-fade-y);
+ mask-image:var(--mountain-fade-x),var(--mountain-fade-y);
+ -webkit-mask-composite:source-in;
+ mask-composite:intersect;
+ -webkit-mask-repeat:no-repeat;
+ mask-repeat:no-repeat;
+ -webkit-mask-size:100% 100%;
+ mask-size:100% 100%;
+}

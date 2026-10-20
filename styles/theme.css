@@ -1,0 +1,39 @@
+/* Shared by the portfolio, case pages, document reader and local text editor. */
+:root{
+ color-scheme:dark;
+ --bg:#111c28;
+ --surface:#1c2c3a;
+ --surface2:#233646;
+ --paper:#e4e9ec;
+ --muted:#a6b7c5;
+ --gold:#b9a27b;
+ --line:#304353;
+ --ink:#111c28;
+ --text-secondary:#bcc9d3;
+ --line-strong:#4c6275;
+ --line-soft:#253744;
+ --header-bg:rgba(17,28,40,.96);
+ --section-tint:rgba(28,44,58,.16);
+ --ending-shade:rgba(10,18,28,.4);
+ --media-bg:#0b141e;
+ --gold-line:#756950;
+ --code:#c7b997;
+ --badge-bg:#20313e;
+ --badge-border:#4f697c;
+ --badge-text:#c1d1dc;
+ --pending-bg:#2c2922;
+ --pending-border:#756a55;
+ --pending-text:#d6c5a1;
+ --diagram-accent:#9ebacb;
+ --diagram-grid:#304353;
+ --diagram-walk:#263e50;
+ --diagram-obstacle:#6c5c4f;
+ --diagram-obstacle-line:#ae9e7f;
+ --soft-highlight:rgba(228,233,236,.015);
+ --lightbox-backdrop:rgba(5,10,17,.88);
+ --dot-fill:rgba(228,233,236,.57);
+ --dot-shadow:rgba(17,28,40,.65);
+ --gold-hover:#cbb58f;
+ --danger:#edb0a3;
+ --mountain-opacity:.11;
+}
